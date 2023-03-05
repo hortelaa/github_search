@@ -7,11 +7,13 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', name: 'index', component: index },
+        { path: '/usuarios', name: 'usuarios', component: usuarios },
     ],
 })
 
 //Views
-import index from './views/index.vue';
+import index from '@/views/index.vue';
+import usuarios from '@/views/usuarios.vue';
 
 //Arquivos SCSS
 import '@/assets/styles/main.scss'

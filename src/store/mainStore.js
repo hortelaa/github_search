@@ -8,7 +8,6 @@ export const useMainStore = defineStore('mainStore', {
         //Método que armazena os dados da busca na API para usuários
         getUsuarios(usuarios) {
             this.usuarios = usuarios
-            console.log(usuarios)
         },
     }
 })

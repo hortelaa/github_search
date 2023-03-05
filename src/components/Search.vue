@@ -17,6 +17,7 @@ export default {
                 const response = await fetch(`https://api.github.com/search/users?q=${this.query}`)
                 const data = await response.json()
                 useMainStore().getUsuarios(data.items)
+                this.$router.push('/usuarios')
             } catch (error) {
                 console.log(error)
             }

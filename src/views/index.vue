@@ -28,6 +28,6 @@ export default {
     name: 'Index Page',
     components: {
         "Search": Search
-    }
+    },
 }
 </script>

@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-top: 3rem;
     flex-direction: column;
 }
 </style>

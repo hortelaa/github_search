@@ -8,12 +8,14 @@ const router = createRouter({
     routes: [
         { path: '/', name: 'index', component: index },
         { path: '/usuarios', name: 'usuarios', component: usuarios },
+        { path: '/repositorios', name: 'repositorios', component: repositorios },
     ],
 })
 
 //Views
 import index from '@/views/index.vue';
 import usuarios from '@/views/usuarios.vue';
+import repositorios from '@/views/repositorios.vue';
 
 //Arquivos SCSS
 import '@/assets/styles/main.scss'

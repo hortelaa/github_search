@@ -8,6 +8,7 @@ const router = createRouter({
     routes: [
         { path: '/', name: 'index', component: index },
         { path: '/usuarios', name: 'usuarios', component: usuarios },
+        { path: '/usuarios/:name', name: 'perfil_usuario', component: perfil_usuario },
         { path: '/repositorios', name: 'repositorios', component: repositorios },
         { path: '/favoritos', name: 'favoritos', component: favoritos },
     ],
@@ -16,6 +17,7 @@ const router = createRouter({
 //Views
 import index from '@/views/index.vue';
 import usuarios from '@/views/usuarios.vue';
+import perfil_usuario from '@/views/perfil_usuario.vue';
 import repositorios from '@/views/repositorios.vue';
 import favoritos from '@/views/favoritos.vue';
 

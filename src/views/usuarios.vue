@@ -10,6 +10,7 @@ import UserCard from "@/components/UserCard.vue";
 import { useMainStore } from "@/store/mainStore"
 
 export default {
+    name: 'Usuários Page',
     data() {
         return {
             qntdVisivel: 3

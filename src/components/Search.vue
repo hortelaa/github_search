@@ -17,7 +17,7 @@ export default {
     methods: {
         async buscar() {
             try {
-                //verifica se a variável repositorioAtivo é verdadeira ou falsa
+                //verifica se a variável repositorioAtivo é verdadeira ou falsa e  altera o parametro da busca de acordo
                 const endpoint = this.repositorioAtivo ? 'repositories' : 'users'
                 const response = await fetch(`https://api.github.com/search/${endpoint}?q=${this.query}`)
                 const data = await response.json()

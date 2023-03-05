@@ -11,6 +11,7 @@ const router = createRouter({
         { path: '/usuarios/:name', name: 'perfil_usuario', component: perfil_usuario },
         { path: '/repositorios', name: 'repositorios', component: repositorios },
         { path: '/favoritos', name: 'favoritos', component: favoritos },
+        { path: '/:pathMatch(.*)*', name: '404', component: pagina404 },
     ],
 })
 
@@ -20,6 +21,7 @@ import usuarios from '@/views/usuarios.vue';
 import perfil_usuario from '@/views/perfil_usuario.vue';
 import repositorios from '@/views/repositorios.vue';
 import favoritos from '@/views/favoritos.vue';
+import pagina404 from '@/views/pagina404.vue';
 
 //Arquivos SCSS
 import '@/assets/styles/main.scss'

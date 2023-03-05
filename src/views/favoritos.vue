@@ -10,7 +10,7 @@
             <h2>Repositórios Favoritos</h2>
         </div>
         <RepoCard v-for="favs in favoritos" :key="favs.id" :repositorios_data="favs"></RepoCard>
-        <p v-if="!favoritos.length">Nenhum favorito encontrado.</p>
+        <p class="sem-favorito" v-if="!favoritos.length">Nenhum favorito encontrado.</p>
     </section>
 </template>
 
@@ -23,6 +23,14 @@
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
+
+    .sem-favorito {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        color: #757575;
+        ;
+    }
 
     .card-title {
         display: flex;

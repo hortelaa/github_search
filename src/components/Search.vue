@@ -25,7 +25,6 @@ export default {
                 if (this.repositorioAtivo) {
                     useMainStore().getRepositorios(data.items)
                     this.$router.push('/repositorios')
-                    console.log(data.items)
                 }
                 else {
                     useMainStore().getUsuarios(data.items)

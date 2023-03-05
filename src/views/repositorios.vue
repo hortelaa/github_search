@@ -1,5 +1,5 @@
 <template>
-    <RepoCard v-for="repos in reposVisiveis" :repositorios="repos"></RepoCard>
+    <RepoCard v-for="repos in reposVisiveis" :repositorios_data="repos"></RepoCard>
     <p v-if="!repositorios.length">Nenhum repositório encontrado.</p>
     <button v-if="!todosVisiveis" @click="mostrarMais">mostrar mais</button>
 </template>

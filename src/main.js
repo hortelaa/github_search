@@ -9,6 +9,7 @@ const router = createRouter({
         { path: '/', name: 'index', component: index },
         { path: '/usuarios', name: 'usuarios', component: usuarios },
         { path: '/repositorios', name: 'repositorios', component: repositorios },
+        { path: '/favoritos', name: 'favoritos', component: favoritos },
     ],
 })
 
@@ -16,6 +17,7 @@ const router = createRouter({
 import index from '@/views/index.vue';
 import usuarios from '@/views/usuarios.vue';
 import repositorios from '@/views/repositorios.vue';
+import favoritos from '@/views/favoritos.vue';
 
 //Arquivos SCSS
 import '@/assets/styles/main.scss'

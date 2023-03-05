@@ -25,6 +25,8 @@
 <style lang="scss" scoped>
 .card-body {
     display: flex;
+    width: 100%;
+    text-align: left;
     justify-content: space-between;
     font-family: 'Rubik', sans-serif;
     border-bottom: black solid 1px;

@@ -1,4 +1,5 @@
 <template>
+    <!--Opções de Busca-->
     <div class="application-buttons">
         <button class="button-primary" :class="{ 'button-active': !repositorioAtivo }" @click="repositorioAtivo = true">
             Repositório
@@ -7,6 +8,8 @@
             Usuário
         </button>
     </div>
+
+    <!--Input de Busca-->
     <div class="application-search">
         <input v-model="query" placeholder="Buscar..." class="search-input" type="text">
         <button @click="buscar" class="search-button">

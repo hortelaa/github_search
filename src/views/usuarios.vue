@@ -17,21 +17,6 @@
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
-
-    .vermais-button {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2rem;
-        background-color: white;
-        color: black;
-        cursor: pointer;
-        width: 10rem;
-        font-family: 'Inter', sans-serif;
-        padding: 0.4rem 1rem;
-        border-radius: 0.5rem;
-        font-size: 16px;
-        font-weight: 700;
-    }
 }
 </style>
 

@@ -40,6 +40,7 @@
         display: flex;
         height: 100%;
         width: 100%;
+        margin-top: -6rem;
         z-index: 20;
         justify-content: center;
         align-items: center;

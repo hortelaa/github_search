@@ -18,7 +18,6 @@ export const useMainStore = defineStore('mainStore', {
         //Método que armazena os repositórios marcados como favoritos
         adicionarFavorito(repositorios_data) {
             this.favoritos.push(repositorios_data);
-            console.log(this.favoritos)
         },
         //Método que remove os repositórios marcados como favoritos baseado no ID
         removerFavorito(repoId) {

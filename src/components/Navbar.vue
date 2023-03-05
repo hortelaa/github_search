@@ -19,7 +19,7 @@
     background-color: #D9D9D9;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     padding: 1.5rem;
-    margin-bottom: 4rem;
+    position: relative;
     font-family: 'Inter', sans-serif;
 
     .nav-logo {

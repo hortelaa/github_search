@@ -1,10 +1,13 @@
 <template>
     <RepoCard v-for="repos in reposVisiveis" :repositorios_data="repos"></RepoCard>
-    <p v-if="!repositorios.length">Nenhum repositório encontrado.</p>
+    <p v-if="!repositorios.length">
+        <ErrorModal></ErrorModal>
+    </p>
     <button v-if="reposVisiveis.length < repositorios.length" @click="mostrarMais">mostrar mais</button>
 </template>
 
 <script>
+import ErrorModal from '@/components/ErrorModal.vue';
 import RepoCard from '@/components/RepoCard.vue';
 import { useMainStore } from '@/store/mainStore';
 
@@ -16,7 +19,8 @@ export default {
         }
     },
     components: {
-        RepoCard
+        RepoCard,
+        ErrorModal
     },
     computed: {
         repositorios() {

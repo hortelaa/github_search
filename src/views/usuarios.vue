@@ -1,6 +1,8 @@
 <template>
     <UserCard v-for="user in usuariosVisiveis" :key="user.id" :usuarios="user"></UserCard>
-    <p v-if="!usuarios.length">Nenhum repositório encontrado.</p>
+    <p v-if="!usuarios.length">
+        <ErrorModal></ErrorModal>
+    </p>
     <button v-if="!todosVisiveis" @click="verMais">MOSTRAR MAIS</button>
 </template>
 
@@ -8,6 +10,7 @@
 <script>
 import UserCard from "@/components/UserCard.vue";
 import { useMainStore } from "@/store/mainStore"
+import ErrorModal from "@/components/ErrorModal.vue";
 
 export default {
     name: 'Usuários Page',
@@ -17,7 +20,8 @@ export default {
         }
     },
     components: {
-        UserCard
+        UserCard,
+        ErrorModal
     },
     computed: {
         usuarios() {

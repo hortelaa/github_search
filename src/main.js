@@ -6,12 +6,12 @@ import { createPinia } from 'pinia'
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-
+        { path: '/', name: 'index', component: index },
     ],
 })
 
 //Views
-
+import index from './views/index.vue';
 
 //Arquivos SCSS
 import '@/assets/styles/main.scss'

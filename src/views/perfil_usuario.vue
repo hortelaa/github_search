@@ -90,7 +90,7 @@
         padding: 1rem;
 
         img {
-            width: 300px;
+            width: 100%;
             height: 300px;
             border-radius: 5px;
             filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));

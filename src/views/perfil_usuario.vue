@@ -67,6 +67,7 @@
 <style lang="scss" scoped>
 .profile-main {
     display: flex;
+    flex-direction: column;
     gap: 3rem;
     width: 100%;
     font-family: 'Rubik', sans-serif;
@@ -74,6 +75,10 @@
     padding-right: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+    }
 
     .user-section {
         display: flex;

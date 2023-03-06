@@ -38,13 +38,21 @@
         flex-direction: column;
 
         .card-title {
-            font-size: 36px;
+            font-size: 24px;
             font-weight: 400;
+
+            @media screen and (min-width:1024px) {
+                font-size: 36px;
+            }
         }
 
         .card-description {
             font-weight: 300;
-            font-size: 24px;
+            font-size: 16px;
+
+            @media screen and (min-width:1024px) {
+                font-size: 24px;
+            }
         }
 
         .card-stars {
@@ -53,6 +61,11 @@
 
             span {
                 padding-left: 0.3rem;
+                font-size: 12px;
+
+                @media screen and (min-width:1024px) {
+                    font-size: 20px;
+                }
             }
         }
     }

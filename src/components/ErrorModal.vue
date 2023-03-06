@@ -40,6 +40,7 @@
         display: flex;
         height: 100%;
         width: 100%;
+        left: 0;
         margin-top: -6rem;
         z-index: 20;
         justify-content: center;
@@ -51,7 +52,12 @@
             justify-content: start;
             align-items: center;
             flex-direction: column;
-            width: 20rem;
+            width: 90%;
+
+            @media screen and (min-width:1024px) {
+                width: 20rem;
+            }
+
             border-radius: 15px;
             gap: 3rem;
             padding: 22px;

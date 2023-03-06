@@ -10,10 +10,18 @@
 <style lang="scss" scoped>
 .card-body {
     display: flex;
+    flex-direction: column;
     padding: 14px;
-    justify-content: start;
+    align-items: center;
+    gap: 1rem;
     box-shadow: 0px 0px 10px 10px #0000001A;
     border-radius: 1rem;
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+    }
 
     .card-img {
         width: 144px;

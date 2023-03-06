@@ -35,13 +35,22 @@
     .card-title {
         display: flex;
         gap: 3rem;
+        flex-direction: column;
         margin-bottom: 2rem;
         align-items: center;
+
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+        }
 
         h2 {
             font-family: 'Roboto Mono', monospace;
             font-weight: 400;
-            font-size: 45px;
+            font-size: 24px;
+
+            @media screen and (min-width:1024px) {
+                font-size: 45px;
+            }
         }
     }
 }

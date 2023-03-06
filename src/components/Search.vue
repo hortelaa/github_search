@@ -11,7 +11,7 @@
 
     <!--Input de Busca-->
     <div class="application-search">
-        <input v-model="query" placeholder="Buscar..." class="search-input" type="text">
+        <input v-on:keyup.enter="buscar" v-model="query" placeholder="Buscar..." class="search-input" type="text">
         <button @click="buscar" class="search-button">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="search-icon">

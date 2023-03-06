@@ -11,9 +11,10 @@ const router = createRouter({
         { path: '/usuarios/:name', name: 'perfil_usuario', component: perfil_usuario },
         { path: '/repositorios', name: 'repositorios', component: repositorios },
         { path: '/favoritos', name: 'favoritos', component: favoritos },
-        { path: '/:pathMatch(.*)*', name: '404', component: pagina404 },
+        { path: '/:pathMatch(.*)*', name: 'pagina404', component: pagina404 },
     ],
 })
+
 
 //Views
 import index from '@/views/index.vue';

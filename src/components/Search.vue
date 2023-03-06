@@ -25,19 +25,29 @@
 <style lang="scss" scoped>
 .application-buttons {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+    }
 
     .button-primary {
         background-color: black;
         color: white;
         font-family: 'Inter', sans-serif;
         border-radius: 0.5rem;
-        width: 12rem;
+        width: 20rem;
         padding: 0.7rem 2rem;
         font-size: 20px;
         cursor: pointer;
         font-weight: 700;
+
+        @media screen and (min-width:1024px) {
+            width: 12rem;
+        }
     }
+
 
     .button-active {
         background-color: white;
@@ -46,10 +56,14 @@
 }
 
 .application-search {
-    width: 50%;
+    width: 20rem;
     display: flex;
     position: relative;
     justify-content: center;
+
+    @media screen and (min-width:1024px) {
+        width: 50%;
+    }
 
     .search-input {
         width: 100%;

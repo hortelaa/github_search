@@ -1,7 +1,5 @@
 # GitHubSearch - Desafio Front End Lux Ti
 
-O GitHub Search é uma aplicação com o intuito de realizar uma busca na API do GitHub para retornar dados que o usuário definir no input.
-
 O GitHub Search é uma aplicação com o intuito de receber data da API do GITHUB a partir de uma busca feita com o input do usuário, ela retorna os usuários pesquisados, os repositórios e ainda apresenta uma área detalhada com as informações dos usuários e os repositórios dos mesmos ao clicar em cima do nome dele.
 
 ## Rodando a Aplicação
